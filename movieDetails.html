@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Detail</title>
+    <link rel="stylesheet" href="MovieDetails.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="heading">Get all information about movies,TV shows & more</h1>
+            <p class="para">Here you can get all information about any movies.</p>
+            <p class="para1">Search movie name to get its details.</p>
+            <div class="search-container">
+                <input type="text" placeholder="Enter movie name" class="inputField" id="movieName">
+                <button class="btn" id="btn" onclick="searchMovieKeyword()" >Search Now <img src="search.png" alt="" class="search-icon"> </button>
+                <button class="btn btn1" onclick="searchMovieKeyword()" ><img src="search.png" alt="" class="search-icon"> </button>
+            </div>
+        </div>
+        <div class="loader" id="loader"></div>
+
+        <div class="movie-container" id="movie_container">
+            <div class="container1">
+                <div class="movie-details">
+                    <div class="movie-content">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTE1YWExNDgtMDAwMS00MmIzLTgzZWEtZjcwY2I1ODI1ODgwXkEyXkFqcGdeQXVyODcxMDYxMDM@._V1_SX300.jpg" alt="" class="SmScrImage" id="img" >
+                        <h1 class="movie-title" id="movie_title">Kantara</h1>
+                        <p> <span id="year">2022</span>, <span id="genre">Action Drama</span></p>
+                        <p class="small" id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p> Actors: <span id="Actors">Lorem, ipsum dolor.</span> </p>
+                        <p>Director: <span id="director">Lorem, ipsum.</span></p>
+                        <p>Earning: <span id="earning">$32366</span></p>
+                        <p class="ratings"><span id="ratings">7.8</span></p>
+                    </div>
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTE1YWExNDgtMDAwMS00MmIzLTgzZWEtZjcwY2I1ODI1ODgwXkEyXkFqcGdeQXVyODcxMDYxMDM@._V1_SX300.jpg" alt="" class="image" id="img1" >
+
+                </div>
+            </div> 
+        </div>
+    </div>
+
+
+    <script src="movieInfo.js"></script>
+
+</body>
+</html>
